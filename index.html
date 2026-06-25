@@ -1,0 +1,224 @@
+```html
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مامۆستا ئازاد علی - لینکتری</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Vazirmatn for beautiful Kurdish typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+            min-height: 100vh;
+        }
+        /* Custom animation for float effect */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        /* Glassmorphism card effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-button {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-button:hover {
+            background: rgba(255, 255, 255, 0.18);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 10px 20px -10px rgba(139, 92, 246, 0.4);
+        }
+    </style>
+</head>
+<body class="text-slate-100 flex flex-col justify-between p-4 sm:p-6 md:p-8 antialiased selection:bg-purple-500 selection:text-white">
+
+    <!-- Top decorative element -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-64 bg-gradient-to-b from-purple-500/10 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Main Container -->
+    <main class="w-full max-w-md mx-auto my-auto flex flex-col items-center">
+        
+        <!-- Profile Section -->
+        <div class="flex flex-col items-center text-center mb-8 float-animation">
+            <!-- Avatar with stylized animated ring -->
+            <div class="relative w-28 h-28 mb-4">
+                <div class="absolute inset-0 bg-gradient-to-tr from-purple-600 via-pink-500 to-indigo-500 rounded-full animate-spin duration-1000 blur-[2px]"></div>
+                <!-- Main Inner Circle Container for Avatar -->
+                <div class="absolute inset-[3px] bg-[#1e1b4b] rounded-full flex items-center justify-center overflow-hidden">
+                    <!-- Elegant SVG Placeholder Avatar symbolizing a teacher/education -->
+                    <svg class="w-16 h-16 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Name and Title -->
+            <h1 class="text-2xl font-bold tracking-wide bg-gradient-to-r from-white via-indigo-200 to-purple-300 bg-clip-text text-transparent">
+                مامۆستا ئازاد علی
+            </h1>
+            <p class="text-sm text-indigo-300 mt-1 font-medium tracking-wide">مامۆستای زمانی عەرەبی</p>
+            
+            <!-- Welcome Slogan -->
+            <div class="mt-4 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs text-purple-300 font-medium">
+                لێرەوە لەگەڵتانین کلیک بکە
+            </div>
+        </div>
+
+        <!-- Links Grid -->
+        <div class="w-full space-y-4">
+            
+            <!-- YouTube Link -->
+            <a href="https://youtube.com/@azad.arabic?si=lMCniTbOZ3rOfNKL" target="_blank" rel="noopener noreferrer" class="glass-button flex items-center justify-between p-4 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-red-500/10 text-red-500 flex items-center justify-center text-xl group-hover:bg-red-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-sm text-white group-hover:text-red-400 transition-colors">کەناڵی یوتوبەکەم</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">سەیرکردنی ڤیدیۆی فێرکاری و وانەکان</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left text-slate-500 group-hover:text-white transition-colors text-xs pl-1"></i>
+            </a>
+
+            <!-- Telegram Link -->
+            <a href="https://t.me/azadali2022" target="_blank" rel="noopener noreferrer" class="glass-button flex items-center justify-between p-4 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl group-hover:bg-sky-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-sm text-white group-hover:text-sky-300 transition-colors">کەناڵی تێلێگرامەکەم</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">بڵاوکردنەوەی مەلزەمە، پرسیار و تاقیکردنەوەکان</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left text-slate-500 group-hover:text-white transition-colors text-xs pl-1"></i>
+            </a>
+
+            <!-- Facebook Link -->
+            <a href="https://www.facebook.com/share/1CuJHvQVGT/" target="_blank" rel="noopener noreferrer" class="glass-button flex items-center justify-between p-4 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-blue-600/10 text-blue-500 flex items-center justify-center text-xl group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-sm text-white group-hover:text-blue-400 transition-colors">هەژماری فەیسبووکم</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">بۆ بینینی نوێترین چالاکی و بابەتەکان</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left text-slate-500 group-hover:text-white transition-colors text-xs pl-1"></i>
+            </a>
+
+            <!-- Facebook Group Link -->
+            <a href="https://www.facebook.com/share/g/1GW1XMTLKn/" target="_blank" rel="noopener noreferrer" class="glass-button flex items-center justify-between p-4 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-sm text-white group-hover:text-teal-300 transition-colors">گرووپەکەم بۆ فێربوونی زمانی عەرەبی</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">بەشداری بکە لە گەورەترین کۆمەڵگەی فێربوون</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left text-slate-500 group-hover:text-white transition-colors text-xs pl-1"></i>
+            </a>
+
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/azad_ali_muhamad?igsh=MTliNjU2bmViNGlpcA==" target="_blank" rel="noopener noreferrer" class="glass-button flex items-center justify-between p-4 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-pink-500/10 text-pink-500 flex items-center justify-center text-xl group-hover:bg-gradient-to-tr group-hover:from-yellow-500 group-hover:via-pink-500 group-hover:to-purple-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-sm text-white group-hover:text-pink-400 transition-colors">ئینستاگرام</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">وێنە، ڕێنمایی و بڵاوکراوەی کورت</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left text-slate-500 group-hover:text-white transition-colors text-xs pl-1"></i>
+            </a>
+
+            <!-- TikTok Link -->
+            <a href="https://www.tiktok.com/@mamosta_azad_ali?_r=1&_t=ZS-97UWiTmaNd6" target="_blank" rel="noopener noreferrer" class="glass-button flex items-center justify-between p-4 rounded-2xl group">
+                <div class="flex items-center gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-slate-500/10 text-slate-300 flex items-center justify-center text-xl group-hover:bg-black group-hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div class="text-right">
+                        <h3 class="font-bold text-sm text-white group-hover:text-slate-300 transition-colors">تیکتۆک</h3>
+                        <p class="text-xs text-slate-400 mt-0.5">بینینی کورتە ڤیدیۆی فێرکاری خێرا</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left text-slate-500 group-hover:text-white transition-colors text-xs pl-1"></i>
+            </a>
+
+        </div>
+
+        <!-- Copy Page Link Action -->
+        <button onclick="copyPageLink()" class="w-full mt-8 mb-4 py-3.5 px-4 rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold text-sm flex items-center justify-center gap-2.5 shadow-lg shadow-purple-900/40 transition-all duration-300 active:scale-[0.98]">
+            <i class="fa-regular fa-clone"></i>
+            <span>لینکی ئەم پەڕەیە کۆپی بکە</span>
+        </button>
+
+    </main>
+
+    <!-- Footer Rights and Credits -->
+    <footer class="w-full text-center py-6 text-xs text-slate-500">
+        <p class="font-medium">سەرجەم مافەکان پارێزراوە بۆ مامۆستا ئازاد علی &copy; 2026</p>
+    </footer>
+
+    <!-- Toast Notification (Custom alert for copying) -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/90 border border-emerald-500/30 text-emerald-400 px-6 py-3.5 rounded-2xl flex items-center gap-3 shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50">
+        <div class="w-6 h-6 rounded-full bg-emerald-500/10 flex items-center justify-center text-sm">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <span class="text-xs font-semibold">لینکەکە بە سەرکەوتوویی کۆپی کرا!</span>
+    </div>
+
+    <!-- JavaScript logic -->
+    <script>
+        function copyPageLink() {
+            // Under iframe environment document.execCommand handles fallback copying safely
+            const dummy = document.createElement('input');
+            document.body.appendChild(dummy);
+            dummy.value = window.location.href;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+
+            // Trigger Smooth Toast Notification
+            const toast = document.getElementById('toast');
+            toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                toast.classList.remove('opacity-100', 'translate-y-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
+
+```
